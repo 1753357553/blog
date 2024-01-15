@@ -86,53 +86,53 @@ theme:
 plugins:
   - tags # 标签功能插件
   - blog # 博客功能插件
-  #- rss: # rss订阅插件 - 不太懂是干嘛的目前
-      #match_path: blog/posts/.* 
-      #date_from_meta:
-      #  as_creation: date
-      #categories:
-      #  - categories
-      #  - tags 
+  - rss: # rss订阅插件 - 不太懂是干嘛的目前
+      match_path: blog/posts/.* 
+      date_from_meta:
+      as_creation: date
+      categories:
+        - categories
+        - tags 
   # - social # 目前我开启会报错，还没研究透 
   - search: # 搜索插件
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' # 分隔符
-  #- minify: # 压缩插件
-      #minify_html: true
+  - minify: # 压缩插件
+      minify_html: true
   # - privacy # 隐私插件
-  # - i18n: # 多语言插件
-  #     docs_structure: suffix # 抄来的，不太懂
-  #     fallback_to_default: true # 抄来的，不太懂
-  #     reconfigure_material: true # 抄来的，不太懂
-  #     reconfigure_search: true # 抄来的，不太懂
-  #     languages: # 多语言配置 - 需要小心一点
-  #       - locale: en
-  #         default: true # 默认语言
-  #         name: English
-  #         build: true # 是否构建
-  #         # site_name: Infinity
-  #       - locale: zh
-  #         name: 简体中文
-  #         build: true
-  #         nav_translations: # 导航栏翻译，不可以有缩进
-  #           HOME: 首页
-  #           ABOUT: 关于
-  #           SPONSORSHIP: 赞助
-  #           CS: 计算机
-  #           CODING: 编程
-  #           EMBEDDED-SYS: 嵌入式系统
-  #           DSP: 数字信号处理
-  #           PERCEPTION: 感知
-  #           ACTUATION: 执行
-  #           IOT: 物联网
-  #           CLOUD: 云
-  #           CLOUD-TECH: 云技术
-  #           HANDS-ON: 上手实践
-  #           Have A Server: 拥有一台服务器
-  #           Server Configuration: 服务器配置
-  #           Get A Domain Name: 获得一个域名
-  #           AI: 人工智能
-  #           RESEARCH: 研究
-  #           PROJECT: 项目
+  - i18n: # 多语言插件
+      docs_structure: suffix # 抄来的，不太懂
+      fallback_to_default: true # 抄来的，不太懂
+      reconfigure_material: true # 抄来的，不太懂
+      reconfigure_search: true # 抄来的，不太懂
+      languages: # 多语言配置 - 需要小心一点
+        - locale: en
+          default: true # 默认语言
+          name: English
+          build: true # 是否构建
+          # site_name: Infinity
+        - locale: zh
+          name: 简体中文
+          build: true
+          nav_translations: # 导航栏翻译，不可以有缩进
+            HOME: 首页
+            ABOUT: 关于
+            SPONSORSHIP: 赞助
+            CS: 计算机
+            CODING: 编程
+            EMBEDDED-SYS: 嵌入式系统
+            DSP: 数字信号处理
+            PERCEPTION: 感知
+            ACTUATION: 执行
+            IOT: 物联网
+            CLOUD: 云
+            CLOUD-TECH: 云技术
+            HANDS-ON: 上手实践
+            Have A Server: 拥有一台服务器
+            Server Configuration: 服务器配置
+            Get A Domain Name: 获得一个域名
+            AI: 人工智能
+            RESEARCH: 研究
+            PROJECT: 项目
 # Hooks - 讲真，这个东西我还没搞懂
 # hooks:
 #   - material/overrides/hooks/shortcodes.py
@@ -210,8 +210,8 @@ markdown_extensions: # markdown extensions
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: 'emoji'
+      emoji_index: !!python/name:pymdownx.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
