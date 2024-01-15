@@ -99,40 +99,40 @@ plugins:
   - minify: # 压缩插件
       minify_html: true
   # - privacy # 隐私插件
-  - i18n: # 多语言插件
-      docs_structure: suffix # 抄来的，不太懂
-      fallback_to_default: true # 抄来的，不太懂
-      reconfigure_material: true # 抄来的，不太懂
-      reconfigure_search: true # 抄来的，不太懂
-      languages: # 多语言配置 - 需要小心一点
-        - locale: en
-          default: true # 默认语言
-          name: English
-          build: true # 是否构建
-          # site_name: Infinity
-        - locale: zh
-          name: 简体中文
-          build: true
-          nav_translations: # 导航栏翻译，不可以有缩进
-            HOME: 首页
-            ABOUT: 关于
-            SPONSORSHIP: 赞助
-            CS: 计算机
-            CODING: 编程
-            EMBEDDED-SYS: 嵌入式系统
-            DSP: 数字信号处理
-            PERCEPTION: 感知
-            ACTUATION: 执行
-            IOT: 物联网
-            CLOUD: 云
-            CLOUD-TECH: 云技术
-            HANDS-ON: 上手实践
-            Have A Server: 拥有一台服务器
-            Server Configuration: 服务器配置
-            Get A Domain Name: 获得一个域名
-            AI: 人工智能
-            RESEARCH: 研究
-            PROJECT: 项目
+  # - i18n: # 多语言插件
+  #     docs_structure: suffix # 抄来的，不太懂
+  #     fallback_to_default: true # 抄来的，不太懂
+  #     reconfigure_material: true # 抄来的，不太懂
+  #     reconfigure_search: true # 抄来的，不太懂
+  #     languages: # 多语言配置 - 需要小心一点
+  #       - locale: en
+  #         default: true # 默认语言
+  #         name: English
+  #         build: true # 是否构建
+  #         # site_name: Infinity
+  #       - locale: zh
+  #         name: 简体中文
+  #         build: true
+  #         nav_translations: # 导航栏翻译，不可以有缩进
+  #           HOME: 首页
+  #           ABOUT: 关于
+  #           SPONSORSHIP: 赞助
+  #           CS: 计算机
+  #           CODING: 编程
+  #           EMBEDDED-SYS: 嵌入式系统
+  #           DSP: 数字信号处理
+  #           PERCEPTION: 感知
+  #           ACTUATION: 执行
+  #           IOT: 物联网
+  #           CLOUD: 云
+  #           CLOUD-TECH: 云技术
+  #           HANDS-ON: 上手实践
+  #           Have A Server: 拥有一台服务器
+  #           Server Configuration: 服务器配置
+  #           Get A Domain Name: 获得一个域名
+  #           AI: 人工智能
+  #           RESEARCH: 研究
+  #           PROJECT: 项目
 # Hooks - 讲真，这个东西我还没搞懂
 # hooks:
 #   - material/overrides/hooks/shortcodes.py
@@ -168,19 +168,19 @@ extra:
   #   - name: Chinese
   #     link: /zh/
   #     lang: zh
-  social: # 社交媒体
-    - icon: fontawesome/solid/house
-      link: http://www.cuishuaiwen.com/
-    - icon: fontawesome/brands/github
-      link: https://github.com/Shuaiwen-Cui
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/shaun-shuaiwen-cui/
-    - icon: fontawesome/brands/researchgate
-      link: https://www.researchgate.net/profile/Shuaiwen-Cui
-    - icon: fontawesome/brands/orcid
-      link: https://orcid.org/0000-0003-4447-6687
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ShuaiwenC
+  # social: # 社交媒体
+  #   - icon: fontawesome/solid/house
+  #     link: http://www.cuishuaiwen.com/
+  #   - icon: fontawesome/brands/github
+  #     link: https://github.com/Shuaiwen-Cui
+  #   - icon: fontawesome/brands/linkedin
+  #     link: https://www.linkedin.com/in/shaun-shuaiwen-cui/
+  #   - icon: fontawesome/brands/researchgate
+  #     link: https://www.researchgate.net/profile/Shuaiwen-Cui
+  #   - icon: fontawesome/brands/orcid
+  #     link: https://orcid.org/0000-0003-4447-6687
+  #   - icon: fontawesome/brands/twitter
+  #     link: https://twitter.com/ShuaiwenC
   tags: # 自定义标签
     Default: default-tag
     Hardware: hardware-tag
