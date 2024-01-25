@@ -254,9 +254,10 @@ nav:
   - html/css/js: 
       - "./CODING/coding.md"
   - Web security: 
-      - "./EMBEDDED-SYS/embedded-sys.md"
+      - SSRF: "Common vulnerabilitise/Sever-Side Request Forgery/SSRF.md"
+      - XXE: "Common vulnerabilitise/XML External Entity/XXE.md"
   - Web crawler: 
-      - "Web crawler/1.md"
+      - "Web crawler/2.md"
   - monthly sumamary:
       - "./Summary/24.1.md"
   - Fun experience:
